@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="text-white">{{ msg }}</h1>
     
     <!-- <ul>
       <li>
@@ -99,7 +99,7 @@ export default {
   name: 'portfolio',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: "Alex Young's Portfolio"
     }
   },
   components: {
