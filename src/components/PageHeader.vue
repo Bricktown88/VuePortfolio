@@ -17,10 +17,17 @@
       <v-btn v-for="button in buttons" :key="button.name" small flat dark 
       :to="button.route" class="pink">
         <v-icon left>{{button.icon}}</v-icon>
-        <span>{{button.name}}</span>
+        <span class="hidden-sm-and-down">{{button.name}}</span>
       </v-btn>
     </v-toolbar-items>
-
+    <v-toolbar-items>
+      <v-btn v-for="linker in linkers" :key="linker.name" small flat dark 
+      :href="linker.ref"
+      target="_blank" class="pink">
+        <v-icon left>{{linker.icon}}</v-icon>
+        <span class="hidden-sm-and-down">{{linker.name}}</span>
+      </v-btn>
+    </v-toolbar-items>
 
 
     <!-- <v-toolbar-items>
@@ -55,6 +62,18 @@ data () {
         name: 'contact',
         icon: 'contact_phone',
         route: '/contact'
+      }
+    ],
+    linkers: [
+      {
+        name: 'linkedIn',
+        icon: 'mdi-linkedin-box',
+        ref: 'https://www.linkedin.com/in/alexander-young-b41b1071/'
+      },
+      {
+        name: 'GitHub',
+        icon: 'mdi-github-circle',
+        ref: 'https://github.com/Bricktown88'
       }
     ]
   }
