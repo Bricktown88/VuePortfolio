@@ -1,0 +1,73 @@
+<template>
+<nav>
+
+  <v-toolbar app class="pink">
+    <v-toolbar-side-icon right @click="hamburger = !hamburger"></v-toolbar-side-icon>
+    <v-toolbar-title class="headline">
+      <router-link
+        class="home"
+        tag="span"
+        :to="{ name: 'portfolio' }">
+        Alex Young
+      </router-link>
+    </v-toolbar-title>
+
+    <v-spacer></v-spacer>
+    <v-toolbar-items>
+      <v-btn v-for="button in buttons" :key="button.name" small flat dark 
+      :to="button.route" class="pink">
+        <v-icon left>{{button.icon}}</v-icon>
+        <span>{{button.name}}</span>
+      </v-btn>
+    </v-toolbar-items>
+
+
+
+    <!-- <v-toolbar-items>
+      <v-btn v-for="button in buttons" :key="button.name" dark>
+      <v-icon>{{button.icon}}</v-icon>
+        {{button.name}}
+      </v-btn>
+    </v-toolbar-items> -->
+  </v-toolbar>
+    <v-navigation-drawer width="180" left temporary app v-model="hamburger">
+      <v-btn block v-for="button in buttons" :key="button.name" small flat dark 
+      :to="button.route" class="pink">
+        <v-icon left>{{button.icon}}</v-icon>
+        <span>{{button.name}}</span>
+      </v-btn>
+    </v-navigation-drawer>
+</nav>
+</template>
+
+<script>
+export default {
+data () {
+  return {
+    hamburger: false,
+    buttons: [
+      {
+        name: 'projects',
+        icon: 'folder',
+        route: '/projects'
+      },
+      {
+        name: 'contact',
+        icon: 'contact_phone',
+        route: '/contact'
+      }
+    ]
+  }
+}
+}
+</script>
+
+<style scoped>
+.home {
+  cursor: pointer;
+}
+
+.home:hover {
+  color: gold;
+}
+</style>
