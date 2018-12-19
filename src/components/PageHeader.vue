@@ -43,6 +43,12 @@
         <v-icon left>{{button.icon}}</v-icon>
         <span>{{button.name}}</span>
       </v-btn>
+      <v-btn v-for="linker in linkers" :key="linker.name" small flat dark 
+      :href="linker.ref"
+      target="_blank" class="pink">
+        <v-icon left>{{linker.icon}}</v-icon>
+        <span>{{linker.name}}</span>
+      </v-btn>
     </v-navigation-drawer>
 </nav>
 </template>
