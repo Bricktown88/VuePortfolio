@@ -31,7 +31,7 @@
             color="pink"
             dark
             >
-            <span>Read More</span>
+            <span>See More</span>
             </v-btn>
 
             <v-card>
