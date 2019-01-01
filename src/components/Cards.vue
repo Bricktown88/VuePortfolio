@@ -60,7 +60,7 @@
                 flat
                 @click="card.dialog = false"
                 >
-                  <span>Close</span>
+                  <span></span>
                   <v-icon right>mdi-close-circle-outline</v-icon>
                 </v-btn>
               </v-card-actions>
@@ -90,7 +90,7 @@
                     },
                     {
                         headline: 'Giphy API', 
-                        description: "Click buttons to view GIFs, or add your own searchable button",
+                        description: "Click premade buttons to view GIFs, or add your own GIF button",
                         image: '../../static/giphy2.png',
                         alt: "Kangaroo2 Image2",
                         dialog: false,

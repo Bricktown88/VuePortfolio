@@ -1,7 +1,13 @@
 <template>
   <div class="hello">
-    <h1 class="text-white">{{ msg }}</h1>
-    
+    <!-- <h1 class="white--text">{{ msg }}</h1> -->
+    <v-layout column align-left>
+          <v-flex class="ma-2">
+            <v-avatar size="200">
+              <img src="../../static/Alex.png" alt="">
+            </v-avatar>
+          </v-flex>
+        </v-layout>
     <!-- <ul>
       <li>
         <a

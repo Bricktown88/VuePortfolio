@@ -14,6 +14,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "buefy": "^0.7.1",
+    "bulma": "^0.7.2",
     "express": "^4.16.4",
     "serve-static": "^1.13.2",
     "vue": "^2.5.2",

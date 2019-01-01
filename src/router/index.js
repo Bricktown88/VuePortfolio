@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Portfolio from '@/components/Portfolio'
 import Projects from '@/components/Projects'
-// step1
-// import About from '@/components/About'
+// import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -14,14 +13,13 @@ export default new Router({
       path: '/',
       name: 'portfolio',
       component: Portfolio
-    }
-    // step2
+    },
     // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: About
+    //   path: '/contact',
+    //   name: 'contact',
+    //   component: Contact
     // }
-    ,
+    // ,
     {
       path: '/projects',
       name: 'projects',
