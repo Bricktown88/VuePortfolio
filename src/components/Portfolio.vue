@@ -87,14 +87,14 @@
       </li>
     </ul> -->
     <panel title="Example">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+      <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
       <v-btn>
         show button
-      </v-btn>
+      </v-btn> -->
     </panel>
   </div>
 </template>
@@ -130,4 +130,6 @@ li {
 a {
   color: #42b983;
 }
+
+
 </style>

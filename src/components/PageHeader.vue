@@ -2,7 +2,7 @@
 <nav>
 
 <!-- Home button and hamburger -->
-  <v-toolbar app class="pink">
+  <v-toolbar app class="color5">
     <v-toolbar-side-icon right @click="hamburger = !hamburger"></v-toolbar-side-icon>
     <v-toolbar-title class="headline">
       <router-link
@@ -18,34 +18,33 @@
 <!-- buttons with routes -->
     <v-toolbar-items>
       <v-btn v-for="button in buttons" :key="button.name" small flat dark 
-      :to="button.route" class="pink">
+      :to="button.route" class="color4">
         <v-icon left>{{button.icon}}</v-icon>
-        <span class="hidden-sm-and-down">{{button.name}}</span>
+        <span class="color2--text hidden-sm-and-down">{{button.name}}</span>
       </v-btn>
     </v-toolbar-items>
 
 <!-- contact button with modal instead of route, importing from ContactForm component -->
     <v-toolbar-items>
       <v-btn v-for="contact in contacts" :key="contact.name" block small flat dark
-      target="_blank" class="pink"
+      target="_blank" class="color4"
       @click="dialog = true">
         <v-icon left>{{contact.icon}}</v-icon>
-        <span>{{contact.name}}</span>
+        <span class="color2--text hidden-sm-and-down">{{contact.name}}</span>
       </v-btn>
       <v-dialog max-width="700px"
         v-model="dialog">
         <!-- <Contact-Modal /> -->
-      <v-card>
+      <v-card class="color5">
         <v-card-title>
-          <span align-center class="headline">Contact Alex</span>
+          <span align-center class="color2--text headline">Contact Alex</span>
         </v-card-title>
         <!-- <Contact-Form /> -->
         <!-- <Contact-Modal /> -->
-        <v-card-text>
+        <v-card-text class="color1--text">
             <v-layout wrap>
               <v-flex xs12>
                 <v-text-field label="name*" v-model="name" required></v-text-field>
-
                 <v-text-field label="Email*" v-model="email" required></v-text-field>
                 <v-textarea label="Message*" v-model="message" required></v-textarea>
               </v-flex>
@@ -70,15 +69,15 @@
 <!-- buttons with links instead of routes -->
       <v-btn v-for="linker in linkers" :key="linker.name" small flat dark 
       :href="linker.ref"
-      target="_blank" class="pink">
+      target="_blank" class="color4">
         <v-icon left>{{linker.icon}}</v-icon>
-        <span class="hidden-sm-and-down">{{linker.name}}</span>
+        <span class="color2--text hidden-sm-and-down">{{linker.name}}</span>
       </v-btn>      
     </v-toolbar-items>
 
 <!-- hamburger specific -->
   </v-toolbar>
-      <v-navigation-drawer width="180" left temporary app v-model="hamburger">
+      <v-navigation-drawer width="180" left temporary app v-model="hamburger" class="color5">
         <v-layout column align-center>
           <v-flex class="mt-2">
             <router-link
@@ -89,22 +88,22 @@
             <v-avatar class="mb-3" size="100">
               <img src="../../static/Alex.png" alt="home">
             </v-avatar>
-            <p class="white--text subheading">Alex Young</p>
+            <p class="color1--text subheading">Alex Young</p>
       </router-link>
         <v-btn block v-for="button in buttons" :key="button.name" small flat dark 
-        :to="button.route" class="mb-2 pink">
+        :to="button.route" class="mb-2 color4">
           <v-icon left>{{button.icon}}</v-icon>
           <span>{{button.name}}</span>
         </v-btn>
         <v-btn v-for="contact in contacts" :key="contact.name" block small flat dark
-          target="_blank" class="mb-2 pink"
+          target="_blank" class="mb-2 color4"
           @click="dialog = true">
             <v-icon left>{{contact.icon}}</v-icon>
             <span>{{contact.name}}</span>
         </v-btn>
         <v-btn block v-for="linker in linkers" :key="linker.name" small flat dark 
         :href="linker.ref"
-        target="_blank" class="mb-2 pink">
+        target="_blank" class="mb-2 color4">
           <v-icon left>{{linker.icon}}</v-icon>
           <span>{{linker.name}}</span>
         </v-btn>
@@ -136,7 +135,7 @@ data () {
     buttons: [
       {
         name: 'projects',
-        icon: 'folder',
+        icon: 'mdi-briefcase',
         route: '/projects'
       }
     ],

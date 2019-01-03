@@ -1,13 +1,20 @@
 <template>
-  <div class="white elevation-2">
-    <v-toolbar flat dense dark>
-      <v-toolbar-title flat dark class="pink--text">{{ title }}</v-toolbar-title>
+  <div class="color3">
+    <v-toolbar flat dense class="color4">
+      <v-toolbar-title flat dark class="color2--text">{{ title }}</v-toolbar-title>
       <slot name="action" />
     </v-toolbar>
 
-    <div class="pl-4 pr-4 pt-2 pb-2">
+    <div class="color5--text pl-4 pr-4 pt-2 pb-2">
       <slot>
-        No slot content defined.
+        <p>This is a test.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+      <v-btn>
+        show button
+      </v-btn>
       </slot>
     </div>
   </div>

@@ -13,7 +13,14 @@ import 'buefy/dist/buefy.css'
 Vue.use(Buefy)
 
 Vue.use(Vuetify, {
-  iconfont: 'mdi' // 'md' || 'mdi' || 'fa' || 'fa4'
+  iconfont: 'mdi', // 'md' || 'mdi' || 'fa' || 'fa4'
+  theme: {
+    color1: 'E63946',
+    color2: 'F1FAEE',
+    color3: 'A8DADC',
+    color4: '457B9D',
+    color5: '1D3557'
+  }
 })
 
 Vue.config.productionTip = false

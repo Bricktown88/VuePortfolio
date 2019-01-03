@@ -2,16 +2,16 @@
 <div>
   <v-layout row wrap>
     <v-flex xs12 sm6 md4 v-for="card in cards" :key="card.headline">
-      <v-card hover height="400" class="ma-3">
+      <v-card hover height="400" class="color4 ma-3">
       <!-- <v-responsive :aspect-ratio="16/9"> -->
         <v-img :src="card.image" :aspect-ratio="16/9" :alt="card.alt">
         </v-img>
       <!-- </v-responsive> -->
 
-        <v-card-title primary-title class="justify-center">
+        <v-card-title primary-title class="color5--text justify-center">
         <div>
           <h3 class="headline mb-0">{{ card.headline }}</h3>
-          <div>{{card.description}}</div>
+          <div class="color2--text">{{card.description}}</div>
         </div>
 
         </v-card-title>
@@ -28,21 +28,21 @@
           >
             <v-btn
             slot="activator"
-            color="pink"
+            class="color1"
             dark
             >
-            <span>See More</span>
+            <span class="color5--text">See More</span>
             </v-btn>
 
-            <v-card>
+            <v-card class="color5">
               <v-card-title primary-title
-              class="headline pink"
+              class="color1 headline"
               >
-              <span>{{card.headline}}</span>
+              <span class="color2--text">{{card.headline}}</span>
               </v-card-title>
 
-              <v-card-text>
-              {{card.description}}
+              <v-card-text class="color2--text">
+              {{card.more}}
               </v-card-text>
 
               <v-divider></v-divider>
@@ -53,10 +53,10 @@
                 :href="card.github"
                 target="_blank">
                   <v-icon left>mdi-github-circle</v-icon>
-                  <span>GitHub</span>
+                  <span class="color2--text">GitHub</span>
                 </v-btn>
                 <v-btn
-                color="red"
+                class="color1--text"
                 flat
                 @click="card.dialog = false"
                 >
@@ -89,12 +89,37 @@
                         github: ""
                     },
                     {
+                        headline: 'LIRI', 
+                        description: "Using Node and the command line, search movies, songs, or concert APIs",
+                        image: '../../static/liri.png',
+                        alt: "LIRI",
+                        dialog: false,
+                        more: "The purpose of this tool is to call various APIs and return their objects via the command line.",
+                        github: "https://github.com/Bricktown88/liri-node-app"
+                    },
+                    {
                         headline: 'Giphy API', 
                         description: "Click premade buttons to view GIFs, or add your own GIF button",
                         image: '../../static/giphy2.png',
-                        alt: "Kangaroo2 Image2",
+                        alt: "Giphy API",
                         dialog: false,
                         github: "https://github.com/Bricktown88/GifTastic"
+                    },
+                    {
+                        headline: 'bAmazon', 
+                        description: "CLI Marketplace",
+                        image: '../../static/bAmazon.png',
+                        alt: "bAmazon",
+                        dialog: false,
+                        github: "https://github.com/Bricktown88/bAmazon"
+                    },
+                    {
+                        headline: 'Game of Thrones FriendFinder', 
+                        description: "Take the survey and find out which GoT character you are!",
+                        image: '../../static/FF.png',
+                        alt: "GoT FriendFinder",
+                        dialog: false,
+                        github: "https://github.com/Bricktown88/FriendFinder"
                     },
                     {
                         headline: 'Kangaroo3', 
